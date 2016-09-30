@@ -22,3 +22,21 @@ Computed the coefficient of determination of predictions for true values.
 The default scoring method for regression learners in scikit-learn.
 
 # Explained Variance Score
+
+# Bias-variance Dilemma
+High Bias
+- Pays little attention to data
+- Oversimplified
+- High error on training set (low r^2, large SSE)
+- too few features
+
+High Variance
+- Pays too much attention to data (does not generalize well)
+- Overfits
+- Much high error on test set than training set
+- too many features, carefully optimized performance on training data
+
+=> You want few features as possible. Large r^2, low SSE.
+
+# Curse of Dimensionality
+As the number of features or dimensions grows, the amount of data we need to generalize accurately grows EXPONENTIALLY!
