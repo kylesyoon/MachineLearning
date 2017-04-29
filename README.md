@@ -40,3 +40,6 @@ High Variance
 
 # Curse of Dimensionality
 As the number of features or dimensions grows, the amount of data we need to generalize accurately grows EXPONENTIALLY!
+
+# Cross Validation
+Divide the available data in to K number of groups. Each group takes a turn being the test data. The result is averaged. This allows all the data to be training and testing data.
