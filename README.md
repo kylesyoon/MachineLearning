@@ -1,5 +1,6 @@
-# MachineLearning
-Notes from the Udacity MLND
+### Machine Learning Notes
+
+##  Foundations
 
 # Precision and Recall
 Confusion Matrix
@@ -29,7 +30,6 @@ High Bias
 - Oversimplified
 - High error on training set (low r^2, large SSE)
 - too few features
-
 High Variance
 - Pays too much attention to data (does not generalize well)
 - Overfits
@@ -43,3 +43,19 @@ As the number of features or dimensions grows, the amount of data we need to gen
 
 # Cross Validation
 Divide the available data in to K number of groups. Each group takes a turn being the test data. The result is averaged. This allows all the data to be training and testing data.
+
+## Supervised Learning
+
+# Gaussian Naive Bayes
+- Assumes that a particular feature is *independent* of the value of any other features, given the class variable.
+- Disregards correlation between features.
+- Only requires a small number of training data. So works well with smaller data sets.
+- It is oversimplified, so it is outperformed by many other algorithms when the data is large.
+- Used in spam filter, document classification, text analysis.
+
+# Decision Trees
+
+- Choose the feature with most information gain (least entropy), move on and repeat.
+- Only goes one level at a time, so the model isn't always the best.
+- Because it splits data until there is an answer, it is prone to overfitting.
+
