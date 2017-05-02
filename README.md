@@ -111,8 +111,8 @@ w' = w' + n(y-y_hat)x
 [Neural Networks](Neural%20Networks.pdf)
 [Gradient Descent](Gradient%20Descent.pdf)
 
-### Stochastic Gradient Descent (SGD) 
-- is a simple yet very efficient approach to discriminative learning of linear classifiers under convex loss functions such as (linear) Support Vector Machines and Logistic Regression. 
+### Stochastic Gradient Descent (SGD)
+- is a simple yet very efficient approach to discriminative learning of linear classifiers under convex loss functions such as (linear) Support Vector Machines and Logistic Regression.
 - Even though SGD has been around in the machine learning community for a long time, it has received a considerable amount of attention just recently in the context of large-scale learning.
 - SGD has been successfully applied to large-scale and sparse machine learning problems often encountered in text classification and natural language processing. Given that the data is sparse, the classifiers in this module easily scale to problems with more than 10^5 training examples and more than 10^5 features.
 The advantages of Stochastic Gradient Descent are:
@@ -132,3 +132,19 @@ The disadvantages of support vector machines include:
 - If the number of features is much greater than the number of samples, the method is likely to give poor performances.
 - SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation (see Scores and probabilities, below).
 [Kernel Methods and SVMs](Kernel_Methods_and_SVMs.pdf)
+
+## Supervised Learning
+
+### K-Means
+- Need to define how many clusters. Can be a challenge.
+- Initial placement can change the out come. (Hill climbing)
+- Local minima
+
+#### Single Linkage Clustering
+- Define K = number of clusters
+- Find two closest clusters and merge, repeat until there are K clusters
+- hierarchical agglomerative cluster structure (tree)
+*Running Time*
+1. Repeat K times (n/2)
+2. Look at all distances to find closest point (n^2)
+= O(n^3)
