@@ -148,3 +148,16 @@ The disadvantages of support vector machines include:
 1. Repeat K times (n/2)
 2. Look at all distances to find closest point (n^2)
 = O(n^3)
+
+### Soft Clustering
+- Uses probability to cluster, allows points to be shared among clusters when probability of belonging to a specific cluster is low
+- monotomically non-decreasing likelihood
+- does not converge (infinitely configures), but practically does
+- will not diverge
+- can get stuck -> random restart
+- works with any distribution
+
+### Three Properties of Clustering
+- Richness
+- Scale-invariance
+- Consistency
