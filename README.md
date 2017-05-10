@@ -149,7 +149,7 @@ The disadvantages of support vector machines include:
 2. Look at all distances to find closest point (n^2)
 = O(n^3)
 
-### Soft Clustering
+### Soft Clustering (expectation maximization)
 - Uses probability to cluster, allows points to be shared among clusters when probability of belonging to a specific cluster is low
 - monotomically non-decreasing likelihood
 - does not converge (infinitely configures), but practically does
@@ -161,3 +161,6 @@ The disadvantages of support vector machines include:
 - Richness
 - Scale-invariance
 - Consistency
+
+#### Impossibility Theorem by Kleinburg
+It's impossible to achieve all three properties.
