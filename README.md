@@ -63,18 +63,29 @@ Divide the available data in to K number of groups. Each group takes a turn bein
 - Can handle missing values and various feature types.
 [ID3 Algorithm for Decision Trees](ID3%20Algorithm%20for%20Decision%20Trees.pdf)
 
-### Ensemble Methods
-- Combining a set of weak learning to produce a learner with high accuracy.
-	- A weak learning is a learner whose perfomance is only slightly better than random guessing.
-	- The weak learner must not be too complex to avoid overfitting.
-- Advantages:
-	- Computationally efficient.
-	- No dofficult parameters to set.
-	- Versatile
-- Disadvantages:
-	- Susceptible to uniform noise.
-	- Needs a sufficient amount of data for the weak learner to do better than random guessing.
-[Intro to Boosting](Intro%20to%20Boosting.pdf)
+### Ensemble Methods - Combining a set of weak learning to produce a learner
+with high accuracy.     - A weak learning is a learner whose perfomance is
+only slightly better than random guessing.     - The weak learner must not be
+too complex to avoid overfitting. - Advantages:     - Computationally
+efficient.     - No dofficult parameters to set.     - Versatile -
+Disadvantages:     - Susceptible to uniform noise.     - Needs a sufficient
+amount of data for the weak learner to do better than random guessing. [Intro
+to Boosting](Intro%20to%20Boosting.pdf)
+
+#### Boosting
+1) Learn a rule over a subset of the data. Pick examples that are "hardest" - meaning learn rules over examples that are "hard" to classify.
+2) Combine the rules by taking a weighted mean.
+
+Error: The probability of the output is wrong (not the number of errors)
+
+Weak Learner: Does better than random guessing. Always has an expected error less than 0.5. Always able to gain from the learner.
+
+The distribution for each example is changed at each iteration based on the output of the hypothesis.
+- If the hypothesis is correct for a particular example (and is incorrect for at least one other example), then the distribution for the example will go down.
+- Vice versa, if the hypothesis is incorrect for an example (and is correct for at least one other example), then the distribution for the particular example will go up.
+
+Then each hypothesis is weighted based on "how well" it is doing (based off the underlying error).
+
 
 ### KNN
 - Lazy learner
